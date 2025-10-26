@@ -1,0 +1,305 @@
+/* ------------------------------------------------------------------
+   GLOBAL RESETS & BASE TYPOGRAPHY
+------------------------------------------------------------------ */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f5f7fa;
+  color: #222;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ------------------------------------------------------------------
+   HEADER & NAVIGATION
+------------------------------------------------------------------ */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 12px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+nav a:hover,
+nav a.active {
+  color: #0078ff;
+  font-weight: 600;
+  border-bottom: 2px solid #0078ff;
+}
+
+/* ------------------------------------------------------------------
+   SECTIONS
+------------------------------------------------------------------ */
+section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+main {
+  margin-top: 50px;
+}
+
+/* ------------------------------------------------------------------
+   HERO SECTION (HOME)
+------------------------------------------------------------------ */
+.hero {
+  background: linear-gradient(to bottom right, #0078ff, #00c6ff);
+  color: white;
+  padding: 140px 20%;
+  text-align: left;
+}
+
+.hero h2,
+.hero p {
+  max-width: 600px;
+}
+
+/* ------------------------------------------------------------------
+   PROJECT GRID
+------------------------------------------------------------------ */
+.project-grid {
+  display: grid;
+  max-width: 900px;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.project {
+  background: #fff;
+  padding: 18px 16px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.project h4 {
+  color: #0078ff;
+}
+
+/* ------------------------------------------------------------------
+   CALL TO ACTION SECTIONS
+------------------------------------------------------------------ */
+.cta {
+  background: #0078ff;
+  color: white;
+  padding: 80px 10%;
+}
+
+.cta .btn {
+  background: white;
+  color: #0078ff;
+}
+
+/* ------------------------------------------------------------------
+   BUTTONS
+------------------------------------------------------------------ */
+.btn {
+  background: #fff;
+  color: #0078ff;
+  padding: 12px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  transform: scale(1.03) translateY(-2px);
+}
+
+/* ------------------------------------------------------------------
+   CONTACT FORM
+------------------------------------------------------------------ */
+.contact-form form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  font-family: inherit;
+}
+
+/* ------------------------------------------------------------------
+   ABOUT PAGE
+------------------------------------------------------------------ */
+.about-hero {
+  background: linear-gradient(to right, #0078ff, #00c6ff);
+  color: white;
+  text-align: center;
+  padding: 100px 10%;
+}
+
+.about-content {
+  background: #f5f7fa;
+  padding: 80px 10%;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: left;
+}
+
+.about-text,
+.about-skills {
+  flex: 1 1 400px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.about-skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-skills li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* ------------------------------------------------------------------
+   FOOTER
+------------------------------------------------------------------ */
+footer {
+  background: #fafafa;
+  padding: 40px 0;
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* ------------------------------------------------------------------
+   ANIMATIONS
+------------------------------------------------------------------ */
+.fade-in {
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ------------------------------------------------------------------
+   INTERACTION CURSORS
+------------------------------------------------------------------ */
+.btn,
+nav a,
+.project {
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------------------
+   RESPONSIVE BEHAVIOR
+------------------------------------------------------------------ */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 80px 5%;
+    text-align: left;
+  }
+}
