@@ -11,7 +11,7 @@ function Contact() {
     const data = Object.fromEntries(formData);
 
     // Send to backend API
-    await fetch("http://localhost:5000/api/contact", {
+    await fetch("https://portfolio-backend-rr10.onrender.com/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

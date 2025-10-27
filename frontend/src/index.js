@@ -8,6 +8,10 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import "./index.css";
 import "./App.css";
+import ProjectChickenCrossing from "./pages/ProjectChickenCrossing";
+import ProjectPasswordManager from "./pages/ProjectPasswordManager";
+import ProjectUSStatesGame from "./pages/ProjectUSStatesGame";
+import ProjectExerciseTracker from "./pages/ProjectExerciseTracker";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -19,6 +23,12 @@ root.render(
         <Route path="works" element={<Works />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
+        
+        <Route path="/chicken-crossing" element={<ProjectChickenCrossing />} />
+        <Route path="/password-manager" element={<ProjectPasswordManager />} />
+        <Route path="/us-states-game" element={<ProjectUSStatesGame />} />
+        <Route path="/exercise-tracker" element={<ProjectExerciseTracker />} />
+
       </Route>
     </Routes>
   </Router>

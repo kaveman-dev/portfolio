@@ -303,3 +303,61 @@ nav a,
     text-align: left;
   }
 }
+
+.no-style-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* PROJECT CARD + HOVER GIF */
+.project {
+  position: relative;
+  overflow: hidden;
+}
+
+.project .demo-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.project:hover .demo-gif {
+  opacity: 1;
+}
+
+/* Fade out text on hover */
+.project:hover h4,
+.project:hover p {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/*..............*/
+
+/* Gradient closer to mockup */
+.home-hero {
+  background: linear-gradient(135deg, #485aff, #00e0ff);
+  color: white;
+  padding-top: 120px;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+

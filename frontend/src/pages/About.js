@@ -21,9 +21,8 @@ function About() {
               projects that help me grow as a developer.
             </p>
             <p>
-              I started coding out of curiosity, and it soon became a passion.
-              I’m always looking for new challenges, opportunities to collaborate,
-              and ways to improve my skills.
+              They say it’s better late than never, so here i am trying to learn as many new things as i can every day to make up for lost time.
+              I’ll show the things i learn and projects i complete here.
             </p>
           </div>
 
